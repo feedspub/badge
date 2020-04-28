@@ -1,0 +1,35 @@
+input:focus, button:focus {
+  outline: none !important;
+}
+
+.is-tab-selected-top::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  content: "";
+  background-color: #48bb78;
+  border-top-left-radius: 3px;
+}
+
+.is-tab-selected-center::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  content: "";
+  background-color: #48bb78;
+}
+
+.is-tab-selected-bottom::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  content: "";
+  background-color: #48bb78;
+  border-bottom-left-radius: 2px;
+}

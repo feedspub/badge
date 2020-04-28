@@ -1,9 +1,90 @@
-# Feeds Pub badge
+## Frontend deployment
 
-Example
+### Deploy to cloudflare workers
 
-[![](https://img.shields.io/badge/dynamic/json?label=follow&query=%24.data.feed.followerCount&url=https%3A%2F%2Fapi.feeds.pub%2Fgraphql%3Fquery%3Dquery%2520feed%28%2524id%253A%2520String%21%29%257B%2520feed%28id%253A%2520%2524id%29%2520%257B%2520followerCount%2520%257D%2520%257D%26variables%3D%257B%2522id%2522%253A%2520%2522https%253A%252F%252Fblog.t9t.io%252Fatom.xml%2522%257D%26operationName%3Dfeed&style=social&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAABFCAYAAAAcjSspAAAACXBIWXMAAAInAAACJwG+ElQIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASkSURBVHgB7Ztdcts2EMf/oDyeNO5MnBOUN4hzAtNvrZ0H8QSimwPEPoHlE9g5gZkTSJ46mU77YPYEVd/6yN5AnWkzrVNxuxAhN3UA0YL46eA3Y30AkDT8c7FY7MKAw+FwlIfAAyAafe2rl/w8m8bhjxOsQedEiUbBNrAVeQLPCBTwJfiaYROiWRiH36ewYAMdIBfiUV+I3oDfBrKN5j3Ge7rDYy/4eQ8WtFoUOS08zxsQiSN+u73ap7EDS1opCosR8J0+4ZcBEWyZwpJWiRKN9tnsxRnUFFkHIjqFJa1wtNJneN7WCVvFEexgqyD+E1MBkWaUXcbhuxiWNC7Ky8sXrzKiIVbzGVO2hDeANwb+mMRhYj1VdDQmytw6xJcXvKz2V/hYwk73NA6vElRII6Io3zHCPNgqhK1CvGaLOC/bIkzU7mij0TccbwgZQxRNl9rFWFCrpby8PBhkhLhoHPsLFuP9sG4xFtQmioo9rguGcXgujqv2GUX0UAMyMmVBpA8xThllHYdx+MOvaJhafIqyEN/Qzb7DY+v4LkZLqFwUFYf4hm4Zb+yxIGtt9cumUp+ipo3RSliQ5xx5tkoQiYdK8QIYBcFxGwWRVCoKxyMnhi4Ozd+eo6VUJopKEfq6PqKbQ7SYCh3txs4iP3aHqRCbZ4fjA16eSS3RIp0/CkyyjH4BssQ2lVgGFYqS7Rj8uBQiyF/e9vvygf0MB3iyrYdvxwdxRrPTJsSpZPrkq47YxRqwjUW8cv0sN4+omdJFkXGJvBiUkD1jtlnc649KGLVQ2vTJ8yOPzzhQi1AuPN08mZGzzcqtTCmWIgURYuuaICJUAFvLADWydkS7EAT3LClwFPsT3wuOUbIU2OTUwI20BOl85WrEuRYM9J/782lnkkwq4XxvZ8h3/auL/tXY0D0+HO/v6qp+vc3HT7BG2WIV1po+vDJEFhl4P6/4mRDaC5/dfHiKmlhLlCVhvIw5ONtOqb73i0DXGo36UiyD1X1IURPWokgrgXn3+5r3NlHuPzQ/anCcPe8fk0NN60xNWouyxEr4At6pKSUS3QBepYK7U0jGIqr+oxmPBDViJYqKMn1dH+dYP9rsbUqHqrvD84rgf993m3fR+xoSb1AjVktyNDo44qXzTNM1uei/ff7/sfvnbFWvdN8jRG4ZBacKEv5OqyMVtlgtyewTdkmzAybKNHc045ikpxWFxRiiAKJZ7WkGq+lDt1v+u/Q+yaTJXW5e1LL4nXl2rjO7ZFMi+m/DCrEx5IcUq/zCvGbcTHbOUhTh61pNB/DicMxZ+5n0CynuQW4hV0M0xMqiqABLx9I4Ip9Gsz1ejsdLhiV5hr/Z/K2Fo/1r21BYLAyulH8Io9GLgB2wLLQ/ExzWZ5T9Js+aNF0uXdDI8S518Qlaio1P8Q3tKR4IFRfDuokTRYONKKmh3ccDwVmKBieKBieKBgtRHpmCtKLTjp1hZVHkPsbQ9fmK8jlgK4rWWpaXLrqDbT5FK4oqWHUeN300OFE0OFE02KYjU13r7Ob973gA2GXziY5xZwXKE83N/NdF2VifT8mPXHlHXAN6knEFry2pRIfD4XA4usm//qauBcoh1b8AAAAASUVORK5CYII=)](https://feeds.pub/feed/https%3A%2F%2Fblog.t9t.io%2Fatom.xml)
+- Deploy react app: https://developers.cloudflare.com/workers/tutorials/deploy-a-react-app
+- SPA: https://stackoverflow.com/questions/58432345/cloudflare-workers-spa-with-vuejs
 
-## How to
+### Deploy to aws S3
+- https://github.com/brandonweiss/discharge
 
-TODO
+### Deploy to aws lambda
+- apex/up
+
+### Conclusion: deploy to aws lambda has the best usage experience
+
+- test speed in China: http://tool.chinaz.com/speedtest/
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Optimize tailwind css size
+
+- Ref: https://tailwindcss.com/docs/controlling-file-size
+- Result: 87.02KB => 3.32 KB
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `yarn start`
+
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+### `yarn test`
+
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn build`
+
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
