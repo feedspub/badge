@@ -88,7 +88,9 @@ export default () => {
     <div>
       <Header />
       <div className="flex justify-center ">
-        <div className="max-w-lg mt-24 w-full flex justify-center m-4">
+      <div className="mt-16 max-w-lg w-full content-center">
+        <h2 className="text-3xl text-gray-900 font-light text-center py-4">Generate a badge and embed to your website</h2>
+        <div className="max-w-lg w-full flex justify-center m-4">
           <input
             className="max-w-lg w-full shadow-inner border border-gray-400 p-3 bg-transparent text-gray-700 leading-tight focus:outline-none rounded-l"
             type="text"
@@ -103,6 +105,7 @@ export default () => {
             Generate
           </button>
         </div>
+        </div>
       </div>
       <div className="flex justify-center" >
         {
@@ -115,9 +118,9 @@ export default () => {
       </div>
       <div className="flex justify-center m-4">
         <div className="max-w-lg w-full content-center">
-          <h2 className="text-2xl text-gray-900 font-semibold text-center py-4">Who is using Feeds Pub Badge</h2>
+          <h2 className="text-2xl text-gray-900 font-light text-center py-4">Who is using Feeds Pub Badge</h2>
           <a
-            href="https://github.com/FeedsPub/badge/issues/new"
+            href="https://github.com/FeedsPub/badge/issues/new?assignees=&labels=&template=add-website.md&title=%5BADD+WEBSITE%5D%3A+"
             className="block text-right font-semibold text-sm hover:underline pb-2"
           >
             + ADD
