@@ -88,11 +88,11 @@ export default () => {
     <div>
       <Header />
       <div className="flex justify-center ">
-      <div className="mt-16 max-w-lg w-full content-center">
-        <h2 className="text-3xl text-gray-900 font-light text-center py-4">Generate a badge and embed to your website</h2>
-        <div className="max-w-lg w-full flex justify-center m-4">
+      <div className="mt-16 max-w-lg w-full content-center mx-2">
+        <h2 className="text-3xl text-gray-900 font-light text-center py-6">Generate a badge and embed to your website</h2>
+        <div className="max-w-lg w-full flex justify-center">
           <input
-            className="max-w-lg w-full shadow-inner border border-gray-400 p-3 bg-transparent text-gray-700 leading-tight focus:outline-none rounded-l"
+            className="max-w-sm w-full shadow-inner border border-gray-400 p-3 bg-transparent text-gray-700 leading-tight focus:outline-none rounded-l"
             type="text"
             placeholder='Feed URL. e.g. "https://blog.feeds.pub/rss.xml"'
             onChange={e => {

@@ -12,9 +12,9 @@ export default () => (
       </a>
     </div>
     <div className="flex items-center">
-      <a href="/explore" className="text-white px-2 py-1 mr-2">
+      <a href="https://github.com/FeedsPub/badge" className="text-white">
         <span className="inline-block flex">
-          {/* <span className="underline">Back to Feeds Pub</span> */}
+          GitHub
         </span>
       </a>
     </div>
