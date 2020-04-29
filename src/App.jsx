@@ -11,15 +11,20 @@ const BadgeComponent = ({ feedURL, badgeURL }) => {
   return (
     <div>
       <div className="flex justify-center my-10">
+        <label className="pr-2 font-semibold" >
+          Preview:
+        </label>
+        <div>
         <img
           src={badgeURL}
           alt="badge"
         />
+        </div>
       </div>
       <div className="flex justify-end items-center">
         <label className="pr-2 font-semibold" >
           HTML:
-      </label>
+        </label>
         <input
           className="border px-1 text-gray-700 h-6 focus:outline-none"
           value={HTMLText}
@@ -57,6 +62,9 @@ const BadgeComponent = ({ feedURL, badgeURL }) => {
             Copy
         </span>
         </CopyToClipboard>
+      </div>
+      <div className="text-right text-gray-500 pt-5 font-light text-xs">
+        <span>Powered by <a className="underline" href="https://shields.io">shields.io</a></span>
       </div>
     </div>
   );
@@ -100,21 +108,23 @@ export default () => {
         {
           badgeURL
             ? <BadgeComponent feedURL={feedURL} badgeURL={badgeURL} />
-            : <div className="">
-            </div>
+            : <div className="my-10">
+                <img src="sample.svg" />
+              </div>
         }
       </div>
       <div className="flex justify-center m-4">
-        <div className="max-w-lg mt-24 w-full content-center">
-          <h2 className="text-2xl text-gray-900 font-semibold text-center py-8">Who is using Feeds Pub Badge</h2>
+        <div className="max-w-lg w-full content-center">
+          <h2 className="text-2xl text-gray-900 font-semibold text-center py-4">Who is using Feeds Pub Badge</h2>
           <a
             href="https://github.com/FeedsPub/badge/issues/new"
-            className="block text-right font-semibold text-sm hover:underline"
+            className="block text-right font-semibold text-sm hover:underline pb-2"
           >
             + ADD
           </a>
           <div className="w-full flex justify-center">
             <div className="max-w-lg w-full">
+              <Example title="cn.ylines.org" url="https://cn.ylines.org" feedUrl="https://cn.ylines.org/rss.xml" />
               <Example title="t9t.io" url="https://blog.t9t.io" feedUrl="https://blog.t9t.io/atom.xml" />
               <Example title="Feeds Pub Blog" url="https://blog.feeds.pub" feedUrl="https://blog.feeds.pub/rss.xml" />
             </div>

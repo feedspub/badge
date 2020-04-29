@@ -1,7 +1,7 @@
 {
   "name": "feedspub-badge",
   "profile": "timConsole",
-  "regions": ["ap-southeast-1"],
+  "regions": ["us-east-1"],
   "type": "static",
   "static": {
     "dir": "build/"
