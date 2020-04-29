@@ -95,7 +95,11 @@ export default () => {
             className="max-w-lg w-full shadow-inner border border-gray-400 p-3 bg-transparent text-gray-700 leading-tight focus:outline-none rounded-l"
             type="text"
             placeholder='Feed URL. e.g. "https://blog.feeds.pub/rss.xml"'
-            onChange={e => setFeedURL(e.target.value)}
+            onChange={e => {
+              let url = e.target.value.trim();
+              if (url[url.length - 1] === '/') url = url.slice(0, -1);
+              setFeedURL(url);
+            }}
           />
           <button
             type="button"
