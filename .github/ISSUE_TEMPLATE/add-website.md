@@ -7,5 +7,7 @@ assignees: ''
 
 ---
 
+I am using Feeds Pub badge on my website
+
 - Website URL:
 - Feed URL:
