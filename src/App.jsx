@@ -131,11 +131,12 @@ export default () => {
           </a>
           <div className="w-full flex justify-center">
             <div className="max-w-lg w-full">
+              <Example title="Dr. X's Y" url="https://drxwhy.com" feedUrl="https://www.drxwhy.com/index.xml" />
               <Example title="juuun.io" url="https://juuun.io/" feedUrl="https://juuun.io/rss.xml" />
               <Example title="胡涂说 hutusi.com" url="https://hutusi.com" feedUrl="https://hutusi.com/feed.xml" />
               <Example title="Panda Home" url="https://old-panda.com/" feedUrl="https://old-panda.com/feed" />
               <Example title="老周快救我" url="https://zxx.im" feedUrl="https://zxx.im/feed" />
-              <Example title="xcodebuild's blog" url="https://www.xcodebuild.com/atom.xml" feedUrl="https://www.xcodebuild.com/atom.xml" />
+              <Example title="xcodebuild's blog" url="https://www.xcodebuild.com" feedUrl="https://www.xcodebuild.com/atom.xml" />
               <Example title="cn.ylines.org" url="https://cn.ylines.org" feedUrl="https://cn.ylines.org/rss.xml" />
               <Example title="t9t.io" url="https://blog.t9t.io" feedUrl="https://blog.t9t.io/atom.xml" />
               <Example title="Feeds Pub Blog" url="https://blog.feeds.pub" feedUrl="https://blog.feeds.pub/rss.xml" />
