@@ -13,5 +13,6 @@ npm start
 ## Deploy
 
 ```bash
-npm run deploy
+# Deploy the website to badge.feeds.pub
+npm run deployProd
 ```

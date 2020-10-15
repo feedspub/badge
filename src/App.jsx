@@ -131,6 +131,7 @@ export default () => {
           </a>
           <div className="w-full flex justify-center">
             <div className="max-w-lg w-full">
+              <Example title="Scvoet" url="https://scvoet.me" feedUrl="https://scvoet.me/feed" />
               <Example title="Dr. X's Y" url="https://drxwhy.com" feedUrl="https://www.drxwhy.com/index.xml" />
               <Example title="juuun.io" url="https://juuun.io/" feedUrl="https://juuun.io/rss.xml" />
               <Example title="胡涂说 hutusi.com" url="https://hutusi.com" feedUrl="https://hutusi.com/feed.xml" />
