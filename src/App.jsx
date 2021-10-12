@@ -116,7 +116,7 @@ export default () => {
           badgeURL
             ? <BadgeComponent feedURL={feedURL} badgeURL={badgeURL} />
             : <div className="my-10">
-                <img src="sample.svg" />
+                <img src="sample.svg" alt="example"/>
               </div>
         }
       </div>
