@@ -131,6 +131,8 @@ export default () => {
           </a>
           <div className="w-full flex justify-center">
             <div className="max-w-lg w-full">
+              <Example title="lowinli’s blog" url="https://lowin.li/" feedUrl="https://lowin.li/atom.xml/" />
+              <Example title="Fidel's Lab" url="https://fidel.js.org/" feedUrl="https://fidel.js.org/rss.xml" />
               <Example title="二猫子 - blog" url="https://www.ermao.net/" feedUrl="https://www.ermao.net/feed/" />
               <Example title="Scvoet" url="https://scvoet.me" feedUrl="https://scvoet.me/feed" />
               <Example title="Dr. X's Y" url="https://drxwhy.com" feedUrl="https://www.drxwhy.com/index.xml" />
